@@ -576,14 +576,12 @@
 <script>
   // PRODUCT DATA (phones & laptops with prices/images)
   const propertiesData = [
-    { id: 1, title: "iPhone 15 Pro Max", price: 1299, location: "Apple Store", type: "Phone", size: "6.9\" Display", img: "https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=800", desc: "A17 Pro chip, titanium design, pro camera system." },
-    { id: 2, title: "Samsung Galaxy S24 Ultra", price: 1199, location: "Samsung Store", type: "Phone", size: "6.8\" AMOLED", img: "https://images.pexels.com/photos/404524/pexels-photo-404524.jpeg?auto=compress&cs=tinysrgb&w=800", desc: "AI-powered, 200MP camera, S Pen included." },
-    { id: 3, title: "MacBook Pro 16\"", price: 2499, location: "Apple Online", type: "Laptop", size: "16.2\" Liquid Retina", img: "https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=800", desc: "M3 Max chip, 36GB RAM, ideal for creators." },
-    { id: 4, title: "Dell XPS 15", price: 1899, location: "Dell Store", type: "Laptop", size: "15.6\" OLED", img: "https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=800", desc: "InfinityEdge display, Intel Core i9, RTX 4060." },
-    { id: 5, title: "Google Pixel 8 Pro", price: 999, location: "Google Store", type: "Phone", size: "6.7\" LTPO", img: "https://images.pexels.com/photos/404124/pexels-photo-404124.jpeg?auto=compress&cs=tinysrgb&w=800", desc: "Advanced AI, superb camera, pure Android." },
-    { id: 6, title: "ASUS ROG Zephyrus G14", price: 1599, location: "ASUS Store", type: "Laptop", size: "14\" 120Hz", img: "https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=800", desc: "Gaming laptop, Ryzen 9, RTX 4070." },
-    { id: 7, title: "OnePlus 12", price: 799, location: "OnePlus Store", type: "Phone", size: "6.82\" Fluid AMOLED", img: "https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=800", desc: "Snapdragon 8 Gen 3, 100W charging." },
-    { id: 8, title: "Surface Laptop Studio 2", price: 2199, location: "Microsoft Store", type: "Laptop", size: "14.4\" Touch", img: "https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=800", desc: "Dynamic woven hinge, RTX 4060, versatile modes." }
+    { id: 1, title: "iPhone 15 Pro Max", price: 1299, location: "Apple Store", type: "Phone", size: "6.9\" Display", img: "img/iphone.jpg", desc: "A17 Pro chip, titanium design, pro camera system." },
+    { id: 2, title: "Samsung Galaxy S24 Ultra", price: 1199, location: "Samsung Store", type: "Phone", size: "6.8\" AMOLED", img: "img/sam.jpg", desc: "AI-powered, 200MP camera, S Pen included." },
+    { id: 3, title: "MacBook Pro 16\"", price: 2499, location: "Apple Online", type: "Laptop", size: "16.2\" Liquid Retina", img: "img/mac.jpg", desc: "M3 Max chip, 36GB RAM, ideal for creators." },
+    { id: 4, title: "Dell XPS 15", price: 1899, location: "Dell Store", type: "Laptop", size: "15.6\" OLED", img: "img/dell.jpg", desc: "InfinityEdge display, Intel Core i9, RTX 4060." },
+    { id: 5, title: "Google Pixel 8 Pro", price: 999, location: "Google Store", type: "Phone", size: "6.7\" LTPO", img: "img/goo.jpg", desc: "Advanced AI, superb camera, pure Android." },
+    { id: 6, title: "ASUS ROG Zephyrus G14", price: 1599, location: "ASUS Store", type: "Laptop", size: "14\" 120Hz", img: "img/dell.jpg", desc: "Gaming laptop, Ryzen 9, RTX 4070." },
   ];
   const teamMembers = [
     { name: "Sarah Johnson", role: "CEO & Founder", img: "https://randomuser.me/api/portraits/women/68.jpg" },
@@ -602,11 +600,11 @@
     { name: "Linda Martinez", role: "Designer", text: "Premium from start to finish. My new Surface Studio is a game-changer.", img: "https://randomuser.me/api/portraits/women/90.jpg" }
   ];
   const galleryImages = [
-    "https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "https://images.pexels.com/photos/404524/pexels-photo-404524.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=800",
-    "https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=800",
-    "https://images.pexels.com/photos/404124/pexels-photo-404124.jpeg?auto=compress&cs=tinysrgb&w=800"
+    "img/sam.jpg",
+    "img/iphone.jpg",
+   "img/goo.jpg",
+    "img/mac.jpg",
+   "img/dell.jpg",    
   ];
 
   function createProductCard(p) {
